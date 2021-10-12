@@ -1,0 +1,62 @@
+{
+  "name": "@cool/cool-ui",
+  "version": "1.0.0",
+  "description": "intro component",
+  "files": [
+    "demo/",
+    "es/",
+    "lib/",
+    "build/"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "stylePath": "style.js",
+  "scripts": {
+    "start": "build-scripts start",
+    "build": "build-scripts build",
+    "test": "build-scripts test",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint --cache --ext .js,.jsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "keywords": [
+    "ice",
+    "react",
+    "component"
+  ],
+  "dependencies": {
+    "prop-types": "^15.5.8"
+  },
+  "devDependencies": {
+    "@alib/build-scripts": "^0.1.32",
+    "@alifd/adaptor-generate": "^0.2.5",
+    "@alifd/next": "^1.23.25",
+    "@iceworks/spec": "^1.4.2",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "build-plugin-component": "^1.7.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^8.0.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "stylelint": "^13.12.0"
+  },
+  "peerDependencies": {
+    "@alifd/next": "1.x",
+    "react": "^16.3.0"
+  },
+  "componentConfig": {
+    "name": "CoolUI",
+    "title": "cool-ui",
+    "category": "Others"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "homepage": "https://unpkg.com/@cool/cool-ui@1.0.0/build/index.html"
+}

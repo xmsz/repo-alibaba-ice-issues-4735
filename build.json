@@ -1,0 +1,7 @@
+{
+  "plugins": ["build-plugin-component"],
+  "externals": {
+    "@alifd/next/**/*/style": "",
+    "@alifd/next/lib/button/style": ""
+  }
+}
